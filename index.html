@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>File Encryption Website</title>
+</head>
+
+<body>
+
+<h2>File Encryption Tool</h2>
+
+<h3>Encrypt File</h3>
+<form action="/encrypt" method="post" enctype="multipart/form-data">
+    Select File:
+    <input type="file" name="file"><br><br>
+
+    Secret Password:
+    <input type="password" name="password"><br><br>
+
+    <button type="submit">Encrypt</button>
+</form>
+
+<hr>
+
+<h3>Decrypt File</h3>
+<form action="/decrypt" method="post" enctype="multipart/form-data">
+  Select Encrypted File:
+    <input type="file" name="file"><br><br>
+
+    Secret Password:
+    <input type="password" name="password"><br><br>
+
+    <button type="submit">Decrypt</button>
+</form>
+
+</body>
+</html>
